@@ -1,0 +1,32 @@
+@media screen and (max-width:992px) {
+    .header-wrap{
+        position: relative;
+    }
+    .header-nav-links{
+        display: none;
+        position: absolute;
+        z-index: 1;
+        top: 100%;
+        left: 0px;
+        width: 100%;
+        background-color: var(--clr-white);
+        padding: 24px;
+    }
+    .header-nav-links.nav-active{
+        display: block;
+    }
+    .header-nav-links .list-row{
+        flex-direction: column;
+    }
+    .hamburger-icon{
+        display: block;
+    }
+
+
+    .hero-title{
+        font-size: 34px;
+    }
+    .hero-section-left{
+        padding: 24px 16px;
+    }
+}
