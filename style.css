@@ -474,4 +474,11 @@ a.btn{
   margin-bottom: 8px;
   line-height: 0.5em;
 }
+.footer-desc{
+  margin-top: 24px;
+}
+.footer-desc p{
+  margin: 0px;
+  line-height: 24px;
+}
 /* footer END */
