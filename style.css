@@ -6,7 +6,7 @@
   --clr-white: #ffffff;
   --clr-black: #000000;
   --clr-1: #0faedc;
-  --clr-1-light: #26c4f0;
+  --clr-1-light: #4ad8ff;
   --clr-2: #ccff00;
   --clr-2-light: #e6ff80;
   --clr-3: #0c4758;
@@ -212,15 +212,25 @@ a.btn{
   background-color: var(--clr-text);
   color: var(--clr-white);
 }
-
+.header-buttons .btn.btn-white{
+  border-color: var(--clr-2);
+}
+.header-buttons .btn.btn-white:hover,
+.header-buttons .btn.btn-white:focus {
+  background-color: var(--clr-2);
+  color: var(--clr-text);
+}
 
 
 .btn.btn-primary {
   background-color: var(--clr-1);
+  color: var(--clr-white);
 }
 .btn.btn-primary:hover,
 .btn.btn-primary:focus {
-  background-color: var(--clr-1-light);
+  background-color: var(--clr-white);
+  color: var(--clr-text);
+  border-color: var(--clr-1);
 }
 
 
@@ -229,7 +239,9 @@ a.btn{
 }
 .btn.btn-secondary:hover,
 .btn.btn-secondary:focus {
-  background-color: var(--clr-2-light);
+  background-color: var(--clr-white);
+  color: var(--clr-text);
+  border-color: var(--clr-2);
 }
 
 .btn.btn-outline {
@@ -506,14 +518,53 @@ a.btn{
 
 
 .retailer-card{
+  margin: 12px 5px;
   width: 100%;
   text-align: center;
-  padding: 16px 24px;
+  padding-top: 16px;
   background-color: var(--clr-white);
-  box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.07058823529411765);
-  border-bottom: 4px solid var(--clr-2);
-  border-radius: 8px;
+  color: var(--clr-3);
+  box-shadow: 0px 0px 15px 0px #00000021;
+  border-radius: 20px;
+  overflow: hidden;
 }
+.retailer-card-svg{
+  position: relative;
+  isolation: isolate;
+  padding: 16px 24px;
+  margin-top: 50px;
+}
+.retailer-card-svg svg{
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  bottom: calc(100% - 1px);
+  left: 0px;
+}
+.retailer-card.primary svg path{
+  fill: var(--clr-1);
+}
+.retailer-card.primary .retailer-card-svg{
+  background: linear-gradient(180deg, var(--clr-1), var(--clr-1-light));
+}
+
+.retailer-card.primary{
+  color: var(--clr-white);
+}
+
+.retailer-card.secondary svg path{
+  fill: var(--clr-2);
+}
+.retailer-card.secondary .retailer-card-svg{
+  background: linear-gradient(180deg, var(--clr-2), var(--clr-2-light));
+}
+
+
+
+
+
+
+
 .retailer-card-img{
   margin-bottom: 8px;
   margin-inline: auto;
@@ -540,13 +591,11 @@ a.btn{
   letter-spacing: 0;
   line-height: 24px;
   padding: 0;
-  color: var(--clr-3);
   margin-bottom: 2px;
   margin-top: 0px;
 }
 .retailer-donation{
   margin: 0px;
-  color: var(--clr-3);
   font-weight: 400;
 }
 /* carousel section END */
@@ -653,6 +702,10 @@ a.btn{
 }
 .swiper-slide{
   height: 100%;
+}
+.swiper-pagination{
+  position: static;
+  margin-top: 24px;
 }
 
 

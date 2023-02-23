@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundraiser</title>
+    <!-- Swiper imports -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap grid-only (Only layout related stylings e.g. margins, paddings, breakpoints) -->
     <link rel="stylesheet" href="./bootstrap-grid.min.css">
@@ -14,18 +20,6 @@
     <link rel="stylesheet" href="./responsive.css">
     <!-- JS (using defer attribute because we want our script to only run when the document has fully loaded) -->
     <script src="./script.js" defer></script>
-
-
-
-
-
-
-    <!-- Swiper imports -->
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
 
 
@@ -56,7 +50,7 @@
                         </ul>
                     </nav>
                     <div class="header-buttons">
-                        <a href="#" class="btn btn-white btn-outline">Login</a>
+                        <a href="#" class="btn btn-white">Login</a>
                         <a href="#" class="btn btn-secondary">Signup</a>
                     </div>
                 </div>
@@ -81,63 +75,94 @@
     </div>
     <main>
         <section class="carousel-section bg-white">
-            <div class="container">
+            <div class="container-fluid">
                 <h3 class="carousel-title entry-animated">Thousands of brands give back when you spend</h3>
                 <div class="carousel-outer">
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="retailer-card">
+                                <div class="retailer-card primary">
                                     <div class="retailer-card-img">
                                         <img src="https://www.easyfundraising.org.uk/assets/blt68b367c2495feb81/Amazon.svg" title="Amazon" alt="Amazon logo">
                                     </div>
-                                    <p class="retailer-name">Amazon</p>
-                                    <p class="retailer-donation">Up to 1.50% donation</p>
+                                    <div class="retailer-card-svg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                                            <path fill="#0099ff" fill-opacity="1" d="M0,96L34.3,85.3C68.6,75,137,53,206,58.7C274.3,64,343,96,411,128C480,160,549,192,617,208C685.7,224,754,224,823,202.7C891.4,181,960,139,1029,106.7C1097.1,75,1166,53,1234,69.3C1302.9,85,1371,139,1406,165.3L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
+                                        </svg>
+                                        <p class="retailer-name">Amazon</p>
+                                        <p class="retailer-donation">Up to 1.50% donation</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="retailer-card">
+                                <div class="retailer-card secondary">
                                     <div class="retailer-card-img">
                                         <img src="https://www.easyfundraising.org.uk/assets/blt9b0725023bff90dc/ebay.svg" title="eBay" alt="eBay logo">
                                     </div>
-                                    <p class="retailer-name">eBay</p>
-                                    <p class="retailer-donation">Up to 1.00% donation</p>
+                                    <div class="retailer-card-svg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                                            <path fill="#0099ff" fill-opacity="1" d="M0,96L34.3,85.3C68.6,75,137,53,206,58.7C274.3,64,343,96,411,128C480,160,549,192,617,208C685.7,224,754,224,823,202.7C891.4,181,960,139,1029,106.7C1097.1,75,1166,53,1234,69.3C1302.9,85,1371,139,1406,165.3L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
+                                        </svg>
+                                        <p class="retailer-name">eBay</p>
+                                        <p class="retailer-donation">Up to 1.00% donation</p>
+                                    </div>
+                                    
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="retailer-card">
+                                <div class="retailer-card primary">
                                     <div class="retailer-card-img">
                                         <img src="https://www.easyfundraising.org.uk/assets/blt465c6296a32d4b58/argos.svg" title="Argos" alt="Argos logo">
                                     </div>
-                                    <p class="retailer-name">Argos</p>
-                                    <p class="retailer-donation">Up to 2.00% donation</p>
+                                    <div class="retailer-card-svg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                                            <path fill="#0099ff" fill-opacity="1" d="M0,96L34.3,85.3C68.6,75,137,53,206,58.7C274.3,64,343,96,411,128C480,160,549,192,617,208C685.7,224,754,224,823,202.7C891.4,181,960,139,1029,106.7C1097.1,75,1166,53,1234,69.3C1302.9,85,1371,139,1406,165.3L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
+                                        </svg>
+                                        <p class="retailer-name">Argos</p>
+                                        <p class="retailer-donation">Up to 2.00% donation</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="retailer-card">
+                                <div class="retailer-card secondary">
                                     <div class="retailer-card-img">
                                         <img src="https://www.easyfundraising.org.uk/assets/bltc43a08d7b030f8ce/john%20-lewis.svg" title="John Lewis & Partners" alt="John Lewis & Partners logo">
                                     </div>
-                                    <p class="retailer-name">John Lewis & Partners</p>
-                                    <p class="retailer-donation">Up to 2.00% donation</p>
+                                    <div class="retailer-card-svg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                                            <path fill="#0099ff" fill-opacity="1" d="M0,96L34.3,85.3C68.6,75,137,53,206,58.7C274.3,64,343,96,411,128C480,160,549,192,617,208C685.7,224,754,224,823,202.7C891.4,181,960,139,1029,106.7C1097.1,75,1166,53,1234,69.3C1302.9,85,1371,139,1406,165.3L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
+                                        </svg>
+                                        <p class="retailer-name">John Lewis & Partners</p>
+                                        <p class="retailer-donation">Up to 2.00% donation</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="retailer-card">
+                                <div class="retailer-card primary">
                                     <div class="retailer-card-img">
                                         <img src="https://www.easyfundraising.org.uk/assets/blt6cd26c332de6f5a1/just%20eat.svg" title="JUST EAT" alt="JUST EAT logo">
                                     </div>
-                                    <p class="retailer-name">JUST EAT</p>
-                                    <p class="retailer-donation">Up to 2.00% donation</p>
+                                    <div class="retailer-card-svg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                                            <path fill="#0099ff" fill-opacity="1" d="M0,96L34.3,85.3C68.6,75,137,53,206,58.7C274.3,64,343,96,411,128C480,160,549,192,617,208C685.7,224,754,224,823,202.7C891.4,181,960,139,1029,106.7C1097.1,75,1166,53,1234,69.3C1302.9,85,1371,139,1406,165.3L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
+                                        </svg>
+                                        <p class="retailer-name">JUST EAT</p>
+                                        <p class="retailer-donation">Up to 2.00% donation</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="retailer-card">
+                                <div class="retailer-card secondary">
                                     <div class="retailer-card-img">
                                         <img src="https://www.easyfundraising.org.uk/assets/bltd2490e42fdaae5ce/m&s.svg" title="Marks and Spencer" alt="Marks and Spencer logo">
                                     </div>
-                                    <p class="retailer-name">Marks and Spencer</p>
-                                    <p class="retailer-donation">Up to 3.00% donation</p>
+                                    <div class="retailer-card-svg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                                            <path fill="#0099ff" fill-opacity="1" d="M0,96L34.3,85.3C68.6,75,137,53,206,58.7C274.3,64,343,96,411,128C480,160,549,192,617,208C685.7,224,754,224,823,202.7C891.4,181,960,139,1029,106.7C1097.1,75,1166,53,1234,69.3C1302.9,85,1371,139,1406,165.3L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
+                                        </svg>
+                                        <p class="retailer-name">Marks and Spencer</p>
+                                        <p class="retailer-donation">Up to 3.00% donation</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -263,7 +288,7 @@
             </div>
         </section>
         <section class="popular-causes-section">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="carousel-outer entry-animated">
                     <h2 class="color-3" style="font-weight: 400; font-size: 28px; margin-top: 0px;">Our Polular Causes</h2>
                     <div class="swiper mySwiper">
