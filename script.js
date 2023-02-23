@@ -19,3 +19,43 @@
         }
     }
 })()
+
+
+
+const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    breakpoints: {
+        992: {
+          slidesPerView: 4,
+          spaceBetween: 24
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 24
+        },
+    },
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+
+
+( function entranceAnimations(){
+    const elements = document.querySelectorAll(".entry-animated");
+    if(elements){
+        const observer = new IntersectionObserver(entries=>{
+            entries.forEach(entry=>{
+                entry.target.classList.toggle("show", entry.isIntersecting);
+                if(entry.isIntersecting) observer.unobserve(entry.target)
+            })
+        }, {
+            threshold:0.6
+        });
+        elements.forEach(element=>{
+            observer.observe(element)
+        })
+    }
+
+})();

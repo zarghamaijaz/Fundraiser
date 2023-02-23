@@ -32,4 +32,15 @@
     .hero-section-left{
         padding: 24px 16px;
     }
+    .social-proof-wrap{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .social-proof-wrap >*{
+        order: 2;
+    }
+    .social-proof-wrap >*:nth-child(2){
+        order: 1;
+    }
 }

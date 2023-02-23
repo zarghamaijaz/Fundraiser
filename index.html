@@ -14,6 +14,21 @@
     <link rel="stylesheet" href="./responsive.css">
     <!-- JS (using defer attribute because we want our script to only run when the document has fully loaded) -->
     <script src="./script.js" defer></script>
+
+
+
+
+
+
+    <!-- Swiper imports -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+
+
 </head>
 <body>
     <div class="bg-gradient">
@@ -50,7 +65,7 @@
         <section class="hero-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 col-lg-6 hero-section-left">
+                    <div class="col-md-12 col-lg-6 hero-section-left entry-animated">
                         <h1 class="hero-title">You spend, <br> brands donate</h1>
                         <p class="hero-desc">Sign up to easyfundraising and see your favourite brands donate to the cause you care about whenever you shop with them.</p>
                         <div class="hero-section-buttons">
@@ -67,64 +82,66 @@
     <main>
         <section class="carousel-section bg-white">
             <div class="container">
-                <h3 class="carousel-title">Thousands of brands give back when you spend</h3>
+                <h3 class="carousel-title entry-animated">Thousands of brands give back when you spend</h3>
                 <div class="carousel-outer">
-                    <div class="carousel-wrap">
-                        <div>
-                            <div class="retailer-card">
-                                <div class="retailer-card-img">
-                                    <img src="https://www.easyfundraising.org.uk/assets/blt68b367c2495feb81/Amazon.svg" title="Amazon" alt="Amazon logo">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="retailer-card">
+                                    <div class="retailer-card-img">
+                                        <img src="https://www.easyfundraising.org.uk/assets/blt68b367c2495feb81/Amazon.svg" title="Amazon" alt="Amazon logo">
+                                    </div>
+                                    <p class="retailer-name">Amazon</p>
+                                    <p class="retailer-donation">Up to 1.50% donation</p>
                                 </div>
-                                <p class="retailer-name">Amazon</p>
-                                <p class="retailer-donation">Up to 1.50% donation</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="retailer-card">
+                                    <div class="retailer-card-img">
+                                        <img src="https://www.easyfundraising.org.uk/assets/blt9b0725023bff90dc/ebay.svg" title="eBay" alt="eBay logo">
+                                    </div>
+                                    <p class="retailer-name">eBay</p>
+                                    <p class="retailer-donation">Up to 1.00% donation</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="retailer-card">
+                                    <div class="retailer-card-img">
+                                        <img src="https://www.easyfundraising.org.uk/assets/blt465c6296a32d4b58/argos.svg" title="Argos" alt="Argos logo">
+                                    </div>
+                                    <p class="retailer-name">Argos</p>
+                                    <p class="retailer-donation">Up to 2.00% donation</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="retailer-card">
+                                    <div class="retailer-card-img">
+                                        <img src="https://www.easyfundraising.org.uk/assets/bltc43a08d7b030f8ce/john%20-lewis.svg" title="John Lewis & Partners" alt="John Lewis & Partners logo">
+                                    </div>
+                                    <p class="retailer-name">John Lewis & Partners</p>
+                                    <p class="retailer-donation">Up to 2.00% donation</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="retailer-card">
+                                    <div class="retailer-card-img">
+                                        <img src="https://www.easyfundraising.org.uk/assets/blt6cd26c332de6f5a1/just%20eat.svg" title="JUST EAT" alt="JUST EAT logo">
+                                    </div>
+                                    <p class="retailer-name">JUST EAT</p>
+                                    <p class="retailer-donation">Up to 2.00% donation</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="retailer-card">
+                                    <div class="retailer-card-img">
+                                        <img src="https://www.easyfundraising.org.uk/assets/bltd2490e42fdaae5ce/m&s.svg" title="Marks and Spencer" alt="Marks and Spencer logo">
+                                    </div>
+                                    <p class="retailer-name">Marks and Spencer</p>
+                                    <p class="retailer-donation">Up to 3.00% donation</p>
+                                </div>
                             </div>
                         </div>
-                        <div>
-                            <div class="retailer-card">
-                                <div class="retailer-card-img">
-                                    <img src="https://www.easyfundraising.org.uk/assets/blt9b0725023bff90dc/ebay.svg" title="eBay" alt="eBay logo">
-                                </div>
-                                <p class="retailer-name">eBay</p>
-                                <p class="retailer-donation">Up to 1.00% donation</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="retailer-card">
-                                <div class="retailer-card-img">
-                                    <img src="https://www.easyfundraising.org.uk/assets/blt465c6296a32d4b58/argos.svg" title="Argos" alt="Argos logo">
-                                </div>
-                                <p class="retailer-name">Argos</p>
-                                <p class="retailer-donation">Up to 2.00% donation</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="retailer-card">
-                                <div class="retailer-card-img">
-                                    <img src="https://www.easyfundraising.org.uk/assets/bltc43a08d7b030f8ce/john%20-lewis.svg" title="John Lewis & Partners" alt="John Lewis & Partners logo">
-                                </div>
-                                <p class="retailer-name">John Lewis & Partners</p>
-                                <p class="retailer-donation">Up to 2.00% donation</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="retailer-card">
-                                <div class="retailer-card-img">
-                                    <img src="https://www.easyfundraising.org.uk/assets/blt6cd26c332de6f5a1/just%20eat.svg" title="JUST EAT" alt="JUST EAT logo">
-                                </div>
-                                <p class="retailer-name">JUST EAT</p>
-                                <p class="retailer-donation">Up to 2.00% donation</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="retailer-card">
-                                <div class="retailer-card-img">
-                                    <img src="https://www.easyfundraising.org.uk/assets/bltd2490e42fdaae5ce/m&s.svg" title="Marks and Spencer" alt="Marks and Spencer logo">
-                                </div>
-                                <p class="retailer-name">Marks and Spencer</p>
-                                <p class="retailer-donation">Up to 3.00% donation</p>
-                            </div>
-                        </div>
-
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </div>
@@ -132,7 +149,7 @@
         <section class="how-it-works-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 col-lg-6">
+                    <div class="col-md-12 col-lg-6 entry-animated">
                         <p class="color-3 " style="text-transform: uppercase; font-weight: 500; margin: 0px;">How it works</p>
                         <h2 class="" style="font-weight: 300; font-size: 34px; margin: 0px;">We turn your daily shopping into every day magic!</h2>
                         <p class="color-3" style="font-weight: 400; font-size: 18px;">easyfundraising partners with over 7,000 brands who will donate part of what you spend to a cause of your choice. It won't cost you any extra. The cost is covered by the brand. </p>
@@ -166,7 +183,7 @@
                     <div class="get-started-content col-md-12 col-lg-6">
                         <p class="color-3 " style="text-transform: uppercase; font-weight: 500; margin: 0px;">How to get started</p>
                         <h2 class="" style="font-weight: 300; font-size: 34px; margin: 0px;">Become an easyfundraiser</h2>
-                        <ul class="step-number-wrap">
+                        <ul class="step-number-wrap entry-animated">
                             <li>
                                 <div class="step-number">1</div>
                                 <div class="step-content color-3">
@@ -192,8 +209,8 @@
                         <div>
                             <!-- We can use either button or anchor tag -->
                             <!-- button commented for now -->
-                            <!-- <button class="btn btn-primary" style="margin-top: 24px;">Get started</button> -->
-                            <a href="#" class="btn btn-primary" style="margin-top: 24px;">Get started</a>
+                            <!-- <button class="btn btn-primary entry-animated" style="margin-top: 24px;">Get started</button> -->
+                            <a href="#" class="btn btn-primary entry-animated" style="margin-top: 24px;">Get started</a>
                             <div class="arrow-link primary" style="margin-top: 24px;">
                                 <div>
                                     <p style="margin: 0px; margin-bottom: 8px;">or</p>
@@ -210,7 +227,7 @@
             <div class="container">
                 <div class="row">
                     <div class="get-started-content col-md-12 col-lg-6">
-                        <p class="color-3 " style="text-transform: uppercase; font-weight: 500; margin: 0px;">How to get started</p>
+                        <p class="color-3 " style="text-transform: uppercase; font-weight: 500; margin: 0px;">MEET THE CAUSES</p>
                         <h2 class="" style="font-weight: 300; font-size: 34px; margin: 0px;">
                             So far we've raised
                             <span class="underline primary">£45,207,754.91</span>
@@ -226,7 +243,7 @@
                             <!-- We can use either button or anchor tag -->
                             <!-- button commented for now -->
                             <!-- <button class="btn btn-primary" style="margin-top: 24px;">Get started</button> -->
-                            <a href="#" class="btn btn-primary" style="margin-top: 24px;">Browse all causes</a>
+                            <a href="#" class="btn btn-primary entry-animated" style="margin-top: 24px;">Browse all causes</a>
                             <div class="arrow-link primary" style="margin-top: 24px;">
                                 <div>
                                     <p style="margin: 0px; margin-bottom: 8px;">or</p>
@@ -239,21 +256,161 @@
                     <div class="get-started-img col-md-12 col-lg-6">
                         <div class="image-container contain">
                             <img src="https://www.easyfundraising.org.uk/assets/blt311e94f7335b1d72/home_meet_causes.png" alt="How to get started"/>
-                            <img class="bg-img" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzM2IiBoZWlnaHQ9IjI5NCIgdmlld0JveD0iMCAwIDMzNiAyOTQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMjc5LjEyNSAyOTRDMzE0LjAwMyAyNjMuMjggMzM2IDIxOC4zMzUgMzM2IDE2OC4yNjJDMzM2IDc1LjY3MTUgMjYwLjc4NCAwLjYxMTkzOCAxNjggMC42MTE5MzhDNzUuMjE2MiAwLjYxMTkzOCAwIDc1LjY3MTUgMCAxNjguMjYyQzAgMjE4LjMzNSAyMS45OTc3IDI2My4yOCA1Ni44NzU0IDI5NEgyNzkuMTI1WiIgZmlsbD0iIzU5RDlDOCIvPgo8L3N2Zz4K" alt="How to get started"/>
+                            <img class="bg-img entry-animated" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzM2IiBoZWlnaHQ9IjI5NCIgdmlld0JveD0iMCAwIDMzNiAyOTQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMjc5LjEyNSAyOTRDMzE0LjAwMyAyNjMuMjggMzM2IDIxOC4zMzUgMzM2IDE2OC4yNjJDMzM2IDc1LjY3MTUgMjYwLjc4NCAwLjYxMTkzOCAxNjggMC42MTE5MzhDNzUuMjE2MiAwLjYxMTkzOCAwIDc1LjY3MTUgMCAxNjguMjYyQzAgMjE4LjMzNSAyMS45OTc3IDI2My4yOCA1Ni44NzU0IDI5NEgyNzkuMTI1WiIgZmlsbD0iIzU5RDlDOCIvPgo8L3N2Zz4K" alt="How to get started"/>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <section class="popular-causes-section">
-
+            <div class="container">
+                <div class="carousel-outer entry-animated">
+                    <h2 class="color-3" style="font-weight: 400; font-size: 28px; margin-top: 0px;">Our Polular Causes</h2>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#" class="causes-card color-3">
+                                    <div class="causes-card-img">
+                                        <img src="https://www.easyfundraising.org.uk/assets/bltc6f75d8d2eb2c1a7/MicrosoftTeams-image (78).png" alt="Macmillan Cancer Support - National" title="Macmillan Cancer Support - National">
+                                    </div>
+                                    <div class="causes-card-content">
+                                        <div class="causes-card-title">
+                                            <h3>Macmillan Cancer Support</h3>
+                                        </div>
+                                        <div class="causes-card-bottom">
+                                            <p class="causes-card-number">£17,693.88 raised</p>
+                                            <p class="causes-card-supporters">2,839 supporters</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="causes-card color-3">
+                                    <div class="causes-card-img">
+                                        <img src="https://www.easyfundraising.org.uk/assets/bltf5d3240be117b551/MicrosoftTeams-image%20(81).png" alt="Macmillan Cancer Support - National" title="Macmillan Cancer Support - National">
+                                    </div>
+                                    <div class="causes-card-content">
+                                        <div class="causes-card-title">
+                                            <h3>RSPCA</h3>
+                                            <div class="d-flex align-items-center" style="gap:5px">
+                                                <i class="fa fa-location-arrow"></i>
+                                                <span>Horsham, West Sussex</span>
+                                            </div>
+                                        </div>
+                                        <div class="causes-card-bottom">
+                                            <p class="causes-card-number">£17,693.88 raised</p>
+                                            <p class="causes-card-supporters">2,839 supporters</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="causes-card color-3">
+                                    <div class="causes-card-img">
+                                        <img src="https://www.easyfundraising.org.uk/assets/blt832015469e884fbf/MicrosoftTeams-image%20(83).png" alt="Macmillan Cancer Support - National" title="Macmillan Cancer Support - National">
+                                    </div>
+                                    <div class="causes-card-content">
+                                        <div class="causes-card-title">
+                                            <h3>Save The Children</h3>
+                                            <div class="d-flex align-items-center" style="gap:5px">
+                                                <i class="fa fa-location-arrow"></i>
+                                                <span>City of London, London</span>
+                                            </div>
+                                        </div>
+                                        <div class="causes-card-bottom">
+                                            <p class="causes-card-number">£17,693.88 raised</p>
+                                            <p class="causes-card-supporters">2,839 supporters</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="causes-card color-3">
+                                    <div class="causes-card-img">
+                                        <img src="https://www.easyfundraising.org.uk/assets/blt7576cc14c08b4736/MicrosoftTeams-image%20(80).png" alt="Macmillan Cancer Support - National" title="Macmillan Cancer Support - National">
+                                    </div>
+                                    <div class="causes-card-content">
+                                        <div class="causes-card-title">
+                                            <h3>Stonewall</h3>
+                                            <div class="d-flex align-items-center" style="gap:5px">
+                                                <i class="fa fa-location-arrow"></i>
+                                                <span>City of London, London</span>
+                                            </div>
+                                        </div>
+                                        <div class="causes-card-bottom">
+                                            <p class="causes-card-number">£17,693.88 raised</p>
+                                            <p class="causes-card-supporters">2,839 supporters</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="causes-card color-3">
+                                    <div class="causes-card-img">
+                                        <img src="https://www.easyfundraising.org.uk/assets/blt43879c4d1415f969/MicrosoftTeams-image%20(79).png" alt="Macmillan Cancer Support - National" title="Macmillan Cancer Support - National">
+                                    </div>
+                                    <div class="causes-card-content">
+                                        <div class="causes-card-title">
+                                            <h3>Mental Health Foundation</h3>
+                                            <div class="d-flex align-items-center" style="gap:5px">
+                                                <i class="fa fa-location-arrow"></i>
+                                                <span>Bermondsey, London</span>
+                                            </div>
+                                        </div>
+                                        <div class="causes-card-bottom">
+                                            <p class="causes-card-number">£17,693.88 raised</p>
+                                            <p class="causes-card-supporters">2,839 supporters</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="social-proof-section">
+            <div class="container">
+                <div class="social-proof-wrap">
+                    <div class="d-flex align-items-center" style="gap: 16px;">
+                        <i class="fa fa-user"></i>
+                        <span>2.4 million supporters</span>
+                    </div>
+                    <div>
+                        <div class="d-flex align-items-center">
+                            <span style="margin:0px 16px 4px 0px">Excellent</span>
+                            <div class="trustpilot-rating">
+                                <!-- The rating is customizable -->
+                                <!-- Change the inline width through JavaScript -->
+                                <div class="trustpilot-rating-fill" style="width: 75%;"></div>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <span>4,059 reviews on</span>
+                            <img style="width: 72px; height: auto; margin-left: 5px;" src="https://cdn.trustpilot.net/brand-assets/1.1.0/logo-white.svg" alt="Trustpilot logo">
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center" style="gap: 16px;">
+                        <i class="fa fa-heart"></i>
+                        <span>190,000 causes</span>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer class="footer-wrap">
         <div class="container">
             <div class="footer-top">
                 <div class="footer-logo">
-                    <img src="https://www.easyfundraising.org.uk/_next/static/images/logo_white-c9e1846fb918fa42658931beded750d8.svg" alt="" srcset="" />
+                    <a href="#">
+                        <img src="./assets/logo.png" alt="" srcset="" />
+                    </a>
                 </div>
                 <div class="footer-socials">
                     <ul class="list-unstyled list-row">
