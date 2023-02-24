@@ -41,25 +41,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   color: var(--clr-text);
-  background-color: var(--clr-bg);
-}
-.bg-gradient{
-  background: linear-gradient(235deg, var(--clr-1), var(--clr-2)) ;
-}
-.bg-white{
   background-color: var(--clr-white);
-}
-.bg-black{
-  background-color: var(--clr-black);
-}
-.bg-primary{
-  background-color: var(--clr-1);
-}
-.bg-secondary{
-  background-color: var(--clr-2);
-}
-.bg-third{
-  background-color: var(--clr-3);
 }
 
 input,
@@ -606,12 +588,18 @@ a.btn{
 /* how it works section START */
 .how-it-works-section{
   padding-block: 80px;
+  background-color: var(--clr-bg);
+  position: relative;
 }
 /* how it works section END */
 
 
 
 /* get started section START */
+.get-started-section{
+  position: relative;
+  background-color: var(--clr-bg);
+}
 .get-started-img{
   padding: 0px;
 }
@@ -714,9 +702,43 @@ a.btn{
 .entry-animated{
   transform: translateY(50%);
   opacity: 0;
+  pointer-events: none;
   transition: all 1000ms;
 }
 .entry-animated.show{
+  pointer-events: initial;
   transform: translateY(0%);
   opacity: 1;
+}
+
+
+
+.svg-container{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+
+.bg-gradient{
+  background: linear-gradient(235deg, var(--clr-1), var(--clr-2)) ;
+}
+.bg-bg{
+  background-color: var(--clr-bg);
+}
+.bg-white{
+  background-color: var(--clr-white);
+}
+.bg-black{
+  background-color: var(--clr-black);
+}
+.bg-primary{
+  background-color: var(--clr-1);
+}
+.bg-secondary{
+  background-color: var(--clr-2);
+}
+.bg-third{
+  background-color: var(--clr-3);
 }
